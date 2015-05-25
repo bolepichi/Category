@@ -14,6 +14,10 @@
 		02E263E61B12EE150005AAE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E263E51B12EE150005AAE8 /* Images.xcassets */; };
 		02E263E91B12EE150005AAE8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02E263E71B12EE150005AAE8 /* LaunchScreen.xib */; };
 		02E263F51B12EE150005AAE8 /* CategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E263F41B12EE150005AAE8 /* CategoryTests.m */; };
+		02E2641B1B12FBED0005AAE8 /* UIImage+LH.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E264171B12FBED0005AAE8 /* UIImage+LH.m */; };
+		02E2641C1B12FBED0005AAE8 /* UIButton+LH.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E264181B12FBED0005AAE8 /* UIButton+LH.m */; };
+		02E2641F1B12FCE40005AAE8 /* UITextField+LH.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E2641E1B12FCE40005AAE8 /* UITextField+LH.m */; };
+		02E264221B13015F0005AAE8 /* UIView+LH.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E264211B13015F0005AAE8 /* UIView+LH.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,16 @@
 		02E263EE1B12EE150005AAE8 /* CategoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CategoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E263F31B12EE150005AAE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02E263F41B12EE150005AAE8 /* CategoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryTests.m; sourceTree = "<group>"; };
+		02E2640D1B12F4BC0005AAE8 /* Category-Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Category-Prefix.h"; sourceTree = "<group>"; };
+		02E264101B12FBA70005AAE8 /* CategoryLH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryLH.h; sourceTree = "<group>"; };
+		02E264171B12FBED0005AAE8 /* UIImage+LH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LH.m"; sourceTree = "<group>"; };
+		02E264181B12FBED0005AAE8 /* UIButton+LH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LH.m"; sourceTree = "<group>"; };
+		02E264191B12FBED0005AAE8 /* UIButton+LH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LH.h"; sourceTree = "<group>"; };
+		02E2641A1B12FBED0005AAE8 /* UIImage+LH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LH.h"; sourceTree = "<group>"; };
+		02E2641D1B12FCE40005AAE8 /* UITextField+LH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+LH.h"; sourceTree = "<group>"; };
+		02E2641E1B12FCE40005AAE8 /* UITextField+LH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+LH.m"; sourceTree = "<group>"; };
+		02E264201B13015F0005AAE8 /* UIView+LH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LH.h"; sourceTree = "<group>"; };
+		02E264211B13015F0005AAE8 /* UIView+LH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LH.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,7 @@
 		02E263D71B12EE150005AAE8 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				02E2640E1B12FB430005AAE8 /* Category */,
 				02E263DC1B12EE150005AAE8 /* AppDelegate.h */,
 				02E263DD1B12EE150005AAE8 /* AppDelegate.m */,
 				02E263DF1B12EE150005AAE8 /* ViewController.h */,
@@ -98,6 +113,7 @@
 			children = (
 				02E263D91B12EE150005AAE8 /* Info.plist */,
 				02E263DA1B12EE150005AAE8 /* main.m */,
+				02E2640D1B12F4BC0005AAE8 /* Category-Prefix.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +133,30 @@
 				02E263F31B12EE150005AAE8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02E2640E1B12FB430005AAE8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				02E264101B12FBA70005AAE8 /* CategoryLH.h */,
+				02E2640F1B12FB5F0005AAE8 /* View */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		02E2640F1B12FB5F0005AAE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02E264201B13015F0005AAE8 /* UIView+LH.h */,
+				02E264211B13015F0005AAE8 /* UIView+LH.m */,
+				02E264191B12FBED0005AAE8 /* UIButton+LH.h */,
+				02E264181B12FBED0005AAE8 /* UIButton+LH.m */,
+				02E2641A1B12FBED0005AAE8 /* UIImage+LH.h */,
+				02E264171B12FBED0005AAE8 /* UIImage+LH.m */,
+				02E2641D1B12FCE40005AAE8 /* UITextField+LH.h */,
+				02E2641E1B12FCE40005AAE8 /* UITextField+LH.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +262,10 @@
 				02E263E11B12EE150005AAE8 /* ViewController.m in Sources */,
 				02E263DE1B12EE150005AAE8 /* AppDelegate.m in Sources */,
 				02E263DB1B12EE150005AAE8 /* main.m in Sources */,
+				02E2641F1B12FCE40005AAE8 /* UITextField+LH.m in Sources */,
+				02E264221B13015F0005AAE8 /* UIView+LH.m in Sources */,
+				02E2641B1B12FBED0005AAE8 /* UIImage+LH.m in Sources */,
+				02E2641C1B12FBED0005AAE8 /* UIButton+LH.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +393,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Category/Category-Prefix.h";
 				INFOPLIST_FILE = Category/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +405,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Category/Category-Prefix.h";
 				INFOPLIST_FILE = Category/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
